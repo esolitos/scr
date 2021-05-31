@@ -1,0 +1,114 @@
+<html>
+        <head>
+                <title>Welcome | Esolitos Hosting</title>
+                <meta name="robots" content="noindex">
+                <style type="text/css" media="screen">
+                        @import 'https://fonts.googleapis.com/css?family=Abel|Droid+Sans|Droid+Serif|Lato|Open+Sans|Roboto';
+
+                        html, body {margin:0;padding:0;overflow:hidden;}
+
+                        /* Example row */
+                        #row {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                height: 100vh;
+                                -webkit-font-smoothing: antialiased;
+                                background-blend-mode: multiply;
+                                background-size: cover;
+                                background-position: center;
+                        }
+                        #heading {
+                                font-weight: 600;
+                                font-size: 3.7rem;
+                                margin-bottom: 0;
+                                outline: none;
+                        }
+                        #strapline {
+                                font-weight: 300;
+                                font-size: 1.4rem;
+                                margin-top: .4rem;
+                                outline: none;
+                        }
+                        #description {
+                                font-weight: 300;
+                                font-size: 1.15rem;
+                                text-align: center;
+                                margin-top: .25rem;
+                                outline: none;
+                        }
+                        .button {
+                                font-size: 1rem;
+                                padding: .5rem 1.1rem .4rem;
+                                border: 1px solid;
+                                border-radius: 1rem;
+                                background: none;
+                                color: inherit;
+                                display: inline-block;
+                                text-decoration: none;
+                        }
+
+                        /* Fonts */
+                        .Abel {
+                                font-family: "Abel", "Lucida Console", monospace;
+                        }
+                        .Droid-Sans {
+                          font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+                        }
+                        .Droid-Serif {
+                                font-family: "Droid Serif", Georgia, serif;
+                        }
+                        .Lato {
+                                font-family: "Lato", Geneva, Tahoma, sans-serif;
+                        }
+                        .Open-Sans {
+                                font-family: "Open Sans", Helvetica, Verdana, sans-serif;
+                        }
+                        .Roboto {
+                                font-family: "Roboto", Geneva, "Lucida Console", sans-serif;
+                        }
+                        .Verdana {
+                                font-family: "Verdana", sans-serif;
+                        }
+                        .Myriad-Pro {
+                                font-family: "Myriad Pro", Helvetica, sans-serif;
+                        }
+                        .Georgia {
+                                font-family: "Georgia", serif;
+                        }
+                        .Futura {
+                                font-family: "Futura", Helvetica, sans-serif;
+                        }
+                </style>
+        </head>
+        <body>
+                <div id="row">
+                        <h1 id="heading">Not the page you were looking for!</h1>
+                        <h4 id="strapline" >Probbably. As this is merely a (nice) default landing page.</h4>
+                        <p id="description">
+                                I could insert here some Lorem Ipsum text, but i feel that having a hand-written message could look slightly better.<br>
+                                Which&hellip; Probably it doesn't, but at the least I got you to read up untill this point.<br>
+                                If you're interested into who am I and what i do please click the button below.<br>
+                        </p>
+                        <span><a class="button" href="https://esolitos.com" target="_blank">Esolitos</a></span>
+                </div>
+                <div id="footer-scripts" style="display:none">
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.4.4/randomColor.min.js" type="text/javascript" charset="utf-8"></script>
+                        <script type="text/javascript">
+                                // Get elements
+                                var row = document.getElementById("row");
+                                // Fonts array
+                                var fonts = ['Abel', 'Droid-Sans', 'Droid-Serif','Lato', 'Open-Sans', 'Roboto', 'Futura', 'Georgia', 'Myriad-Pro', 'Verdana'];
+                                // Randomise styles
+                                var randFontClass = fonts[Math.floor(Math.random() * fonts.length)];
+                                var randImage = "https://unsplash.it/1200/800/?image=" + Math.floor(100 + Math.random() * 900);
+                                // Apply random styles
+                                row.style.color = randomColor({luminosity: 'light'});
+                                row.style.backgroundColor = randomColor({luminosity: 'dark'});
+                                row.style.backgroundImage = "url(" + randImage + ")";
+                                row.setAttribute("class", randFontClass);
+                        </script>
+                </div>
+        </body>
+</html>
